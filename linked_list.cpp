@@ -6,6 +6,14 @@ class Node {
 public:
     int val;
     Node *next;
+	node (int val){
+	    this->val=val;
+		this -> next=null;
+	}
+	node (int val,node*next){
+	    this->val=val;
+		this -> next=next;
+	}
 };
 
 int main() {
@@ -54,6 +62,6 @@ int main() {
     for (Node *temp = &first; temp != NULL; temp = temp->next)
         cout << temp->val << ' ';
     cout << "\n";
-
+    
     return 0;
 }
