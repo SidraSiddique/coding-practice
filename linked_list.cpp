@@ -29,6 +29,18 @@ public:
             cout << temp -> val << ' ';
         cout << '\n';
     }
+    int main(){
+        LinkedList list;
+        list.addAtStart(20);
+        list.addAtStart(10);
+        list.show();
+        list.addAtStart(40);
+        list.show();
+        list.addAtStart(30);
+        list.show();
+        cout << "\n";
+        return 0;
+    }
 };
 
 
