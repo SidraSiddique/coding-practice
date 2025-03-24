@@ -1,3 +1,4 @@
+//add at the start and at the end
 #include<iostream>
 
 using namespace std;
@@ -15,7 +16,30 @@ public:
 		this -> next=next;
 	}
 };
+class LinkedList{
+    Node *start;
+public:
+    LinkedList(){	start = NULL;		}
+    void addAtStart(int val){
+        if (!start)	start = new Node(val);
+        else		start = new Node(val, start);
+    }
+};
 
+
+
+// 2nd code:
+
+#include<iostream>
+
+using namespace std;
+
+class Node {
+public:
+    int val;
+    Node *next;
+
+}
 int main() {
     Node first, second, third, fourth, fifth, sixth;
 
