@@ -24,6 +24,11 @@ public:
         if (!start)	start = new Node(val);
         else		start = new Node(val, start);
     }
+    void show() const{
+        for (Node *temp = start ; temp != NULL ; temp = temp -> next)
+            cout << temp -> val << ' ';
+        cout << '\n';
+    }
 };
 
 
